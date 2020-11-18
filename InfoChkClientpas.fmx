@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    object Panel2: TPanel
+      Align = MostTop
+      Size.Width = 640.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      object Label1: TLabel
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = '    '#54620#44397#52384#44053'('#51452') Ping Test App v1.0'
+      end
+    end
+    object Panel3: TPanel
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object Button1: TButton
+        Position.X = 244.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = #51312#54924
+        OnClick = Button1Click
+      end
+      object CheckBox1: TCheckBox
+        IsChecked = True
+        Position.X = 16.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'N/W'
+      end
+      object CheckBox2: TCheckBox
+        IsChecked = True
+        Position.X = 85.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'VIDEO'
+      end
+      object CheckBox3: TCheckBox
+        IsChecked = True
+        Position.X = 157.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'SERVER'
+      end
+    end
+  end
+  object Panel4: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 415.000000000000000000
+    Size.PlatformDefault = False
+    object StringGrid1: TStringGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 640.000000000000000000
+      Size.Height = 415.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = #44404#47548#52404
+      StyledSettings = [Size, Style, FontColor]
+      RowCount = 0
+      OnDrawColumnCell = StringGrid1DrawColumnCell
+      Viewport.Width = 636.000000000000000000
+      Viewport.Height = 390.000000000000000000
+    end
+  end
+  object UniConnection1: TUniConnection
+    AutoCommit = False
+    ProviderName = 'MySQL'
+    Port = 3306
+    Database = 'juneapps'
+    SpecificOptions.Strings = (
+      'MySQL.Charset=utf8mb4'
+      'MySQL.UseUnicode=True')
+    Username = 'appslogin'
+    Server = '34.64.75.224'
+    Left = 320
+    Top = 48
+    EncryptedPassword = '9EFF8FFF8FFF8CFF93FF90FF98FF96FF91FF9BFF9AFF93FF8FFF97FF96FF'
+  end
+  object UniQuery1: TUniQuery
+    Connection = UniConnection1
+    Left = 392
+    Top = 16
+  end
+  object MySQLUniProvider1: TMySQLUniProvider
+    Left = 480
+    Top = 32
+  end
+end

@@ -1,0 +1,30 @@
+inherited Form1_iPhone55in: TForm1_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited Panel1: TPanel
+    Size.Width = 414.000000000000000000
+    inherited Panel2: TPanel
+      Size.Width = 414.000000000000000000
+      inherited Label1: TLabel
+        Size.Width = 414.000000000000000000
+      end
+    end
+    inherited Panel3: TPanel
+      Size.Width = 414.000000000000000000
+    end
+  end
+  inherited Panel4: TPanel
+    Size.Width = 414.000000000000000000
+    Size.Height = 651.000000000000000000
+    inherited StringGrid1: TStringGrid
+      Size.Width = 414.000000000000000000
+      Size.Height = 651.000000000000000000
+      Viewport.Width = 414.000000000000000000
+      Viewport.Height = 651.000000000000000000
+    end
+  end
+  inherited UniConnection1: TUniConnection
+    EncryptedPassword = '9EFF8FFF8FFF8CFF93FF90FF98FF96FF91FF9BFF9AFF93FF8FFF97FF96FF'
+  end
+end

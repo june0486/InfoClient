@@ -13,7 +13,7 @@ object Form1: TForm1
   object Panel1: TPanel
     Align = Top
     Size.Width = 640.000000000000000000
-    Size.Height = 65.000000000000000000
+    Size.Height = 81.000000000000000000
     Size.PlatformDefault = False
     object Panel2: TPanel
       Align = MostTop
@@ -31,18 +31,18 @@ object Form1: TForm1
     object Panel3: TPanel
       Align = Client
       Size.Width = 640.000000000000000000
-      Size.Height = 40.000000000000000000
+      Size.Height = 56.000000000000000000
       Size.PlatformDefault = False
       object Button1: TButton
         Position.X = 244.000000000000000000
-        Position.Y = 8.000000000000000000
+        Position.Y = 31.000000000000000000
         Text = #51312#54924
         OnClick = Button1Click
       end
       object CheckBox1: TCheckBox
         IsChecked = True
         Position.X = 16.000000000000000000
-        Position.Y = 8.000000000000000000
+        Position.Y = 31.000000000000000000
         Size.Width = 57.000000000000000000
         Size.Height = 19.000000000000000000
         Size.PlatformDefault = False
@@ -51,7 +51,7 @@ object Form1: TForm1
       object CheckBox2: TCheckBox
         IsChecked = True
         Position.X = 85.000000000000000000
-        Position.Y = 8.000000000000000000
+        Position.Y = 31.000000000000000000
         Size.Width = 81.000000000000000000
         Size.Height = 19.000000000000000000
         Size.PlatformDefault = False
@@ -60,32 +60,37 @@ object Form1: TForm1
       object CheckBox3: TCheckBox
         IsChecked = True
         Position.X = 157.000000000000000000
-        Position.Y = 8.000000000000000000
+        Position.Y = 31.000000000000000000
         Size.Width = 81.000000000000000000
         Size.Height = 19.000000000000000000
         Size.PlatformDefault = False
         Text = 'SERVER'
+      end
+      object Lbl_Server: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'Lbl_Server'
       end
     end
   end
   object Panel4: TPanel
     Align = Client
     Size.Width = 640.000000000000000000
-    Size.Height = 415.000000000000000000
+    Size.Height = 399.000000000000000000
     Size.PlatformDefault = False
     object StringGrid1: TStringGrid
       Align = Client
       CanFocus = True
       ClipChildren = True
       Size.Width = 640.000000000000000000
-      Size.Height = 415.000000000000000000
+      Size.Height = 399.000000000000000000
       Size.PlatformDefault = False
-      TextSettings.Font.Family = #44404#47548#52404
-      StyledSettings = [Size, Style, FontColor]
+      TextSettings.Font.Family = #47569#51008' '#44256#46357
+      StyledSettings = [Style, FontColor]
       RowCount = 0
       OnDrawColumnCell = StringGrid1DrawColumnCell
       Viewport.Width = 636.000000000000000000
-      Viewport.Height = 390.000000000000000000
+      Viewport.Height = 374.000000000000000000
     end
   end
   object UniConnection1: TUniConnection
@@ -110,5 +115,21 @@ object Form1: TForm1
   object MySQLUniProvider1: TMySQLUniProvider
     Left = 480
     Top = 32
+  end
+  object RESTClient1: TRESTClient
+    Params = <>
+    Left = 192
+    Top = 184
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Left = 256
+    Top = 184
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 320
+    Top = 184
   end
 end

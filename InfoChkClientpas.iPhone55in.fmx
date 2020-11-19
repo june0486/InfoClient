@@ -16,12 +16,13 @@ inherited Form1_iPhone55in: TForm1_iPhone55in
   end
   inherited Panel4: TPanel
     Size.Width = 414.000000000000000000
-    Size.Height = 651.000000000000000000
+    Size.Height = 635.000000000000000000
     inherited StringGrid1: TStringGrid
       Size.Width = 414.000000000000000000
-      Size.Height = 651.000000000000000000
+      Size.Height = 635.000000000000000000
+      TextSettings.Font.Size = 10.000000000000000000
       Viewport.Width = 414.000000000000000000
-      Viewport.Height = 651.000000000000000000
+      Viewport.Height = 635.000000000000000000
     end
   end
   inherited UniConnection1: TUniConnection

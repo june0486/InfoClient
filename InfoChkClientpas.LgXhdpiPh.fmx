@@ -16,12 +16,13 @@ inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
   end
   inherited Panel4: TPanel
     Size.Width = 450.000000000000000000
-    Size.Height = 630.000000000000000000
+    Size.Height = 614.000000000000000000
     inherited StringGrid1: TStringGrid
       Size.Width = 450.000000000000000000
-      Size.Height = 630.000000000000000000
+      Size.Height = 614.000000000000000000
+      TextSettings.Font.Size = 10.000000000000000000
       Viewport.Width = 450.000000000000000000
-      Viewport.Height = 630.000000000000000000
+      Viewport.Height = 614.000000000000000000
     end
   end
   inherited UniConnection1: TUniConnection
